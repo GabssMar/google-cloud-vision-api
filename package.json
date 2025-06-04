@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@google-cloud/vision": "^5.1.0",
+    "express": "^5.1.0",
+    "node-fetch": "2"
+  },
+  "name": "google-cloud-vision-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
