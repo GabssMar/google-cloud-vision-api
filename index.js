@@ -2,12 +2,14 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const vision = require('@google-cloud/vision');
+const cors = require('cors');
 const client = new vision.ImageAnnotatorClient({
   keyFilename: 'cultivated-era-456223-p2-5cb794b719c5.json',
 });
 
 const server = express();
 server.use(express.json());
+server.use(cors());
 
 let ultimoResultado = null;
 
